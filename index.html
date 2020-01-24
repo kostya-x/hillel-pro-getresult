@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор</title>
+</head>
+<body>
+  <script>
+    var firstNumber = prompt("Введите первое число");
+    var secontNumber = prompt("Введите второе число");
+    var mathSymbol = prompt("Введите математический символ");
+
+    function getResult(firstNumber, secontNumber, mathSymbol) {
+      var result = firstNumber + mathSymbol + secontNumber;
+
+      return eval(result);
+    }
+
+    alert(getResult(firstNumber, secontNumber, mathSymbol));
+  </script>
+</body>
+</html>
